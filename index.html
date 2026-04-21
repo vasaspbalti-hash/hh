@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Бельцы мой город</title>
+</head>
+<body>
+<header>
+    <img class="logo" src="images/MS.jpg" alt="Логотип Бельц">
+
+    <navbar>
+        <a href="index.html">Домой</a>
+        <a href="pages/despre.html">О нас</a>
+        <a href="pages/dostoprimechatel.html">Достопримечательности</a>
+        <a href="pages/contacte.html">Контакты</a>
+        <a href="pages/Table.html">Таблица</a>
+    </navbar>
+
+    <i id="hamburger" onclick="mobileMenu()" class="fa-solid fa-bars"></i>
+</header>
+
+<main>
+    <section id="index">
+        <div class="index-info">
+            <span class="hero-kicker">Северная столица Молдовы</span>
+            <h1>Бельцы</h1>
+            <p class="hero-text">
+                Тёплая городская мелодия о Бельцах: зелёные улицы, спокойный ритм
+                города и светлое настроение родного места.
+            </p>
+
+            <div class="music-card">
+                <div class="music-copy">
+                    <h2>Музыка о Бельцах</h2>
+                    <p>
+                        Небольшая авторская инструментальная тема для сайта. Лучше
+                        всего звучит как атмосферное сопровождение первого экрана.
+                    </p>
+                </div>
+
+                <button id="music-toggle" class="music-button" type="button" aria-pressed="false">
+                    <i class="fa-solid fa-play"></i>
+                    <span>Включить мелодию</span>
+                </button>
+
+                <audio id="balti-audio" class="music-player" controls preload="auto">
+                    <source src="audio/balti-theme.wav" type="audio/wav">
+                    Ваш браузер не смог загрузить аудио.
+                </audio>
+
+                <p id="music-status" class="music-status">Нажми на кнопку или плеер ниже, чтобы включить музыку.</p>
+            </div>
+
+            <a href="pages/despre.html" class="link-index">Больше</a>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <span>Бельцы 2026</span>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
